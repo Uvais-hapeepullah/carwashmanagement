@@ -1,0 +1,31 @@
+{
+  "name": "car-wash-management",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A simple React and Express car wash management project",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c cyan,green \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.2.1",
+    "vite": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

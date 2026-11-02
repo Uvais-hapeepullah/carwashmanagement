@@ -65,7 +65,7 @@ export default function App() {
     return () => clearTimeout(timeout);
   }, [toast]);
   useEffect(() => {
-    document.title = `${data?.settings.businessName || import.meta.env.VITE_APP_NAME || "Washwise"} | Car Wash Management`;
+    document.title = `${data?.settings.businessName || import.meta.env.VITE_APP_NAME || "Ideal Car Wash"} | Car Wash Management`;
   }, [data?.settings.businessName]);
 
   function notify(message) {
@@ -428,7 +428,7 @@ export default function App() {
       )}
       {modal?.type === "help" && (
         <Modal
-          title="A quick guide to Washwise"
+          title={`A quick guide to ${data.settings.businessName}`}
           description="Everything you need for a smoother day."
           onClose={closeModal}
         >

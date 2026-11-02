@@ -1,4 +1,4 @@
-# Washwise — Car Wash Management
+# Ideal Car Wash — Car Wash Management
 
 A simple car wash management project built with **React, JavaScript, and Express**. It includes a dashboard, bookings, a wash queue, customer records, service packages, payment records, and reports.
 
@@ -58,7 +58,7 @@ After `npm run build` followed by `npm start`, open **http://127.0.0.1:4000**. S
 | `CLIENT_ORIGIN` | `http://localhost:5173`    | Allowed development frontend origin.                           |
 | `DATA_FILE`     | `./server/data/store.json` | Location of the saved records, relative to the project folder. |
 | `VITE_API_URL`  | `/api`                     | API address used by React.                                     |
-| `VITE_APP_NAME` | `Washwise`                 | Application name used by the frontend.                         |
+| `VITE_APP_NAME` | `Ideal Car Wash`           | Application name used by the frontend.                         |
 | `VITE_DEV_PORT` | `5173`                     | Frontend development port.                                     |
 
 Restart the development server after changing environment settings. If you change the frontend port, update `CLIENT_ORIGIN` to match. Variables beginning with `VITE_` are included in the browser application; never put passwords or private keys in them.

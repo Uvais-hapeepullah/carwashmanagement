@@ -8,10 +8,10 @@ export function localDate(date = new Date()) {
 
 export function createSeed() {
   const settings = {
-    businessName: "Washwise",
+    businessName: "Ideal Car Wash",
     ownerName: "Alex Morgan",
     phone: "+91 98765 43210",
-    email: "hello@washwise.example",
+    email: "hello@idealcarwash.example",
     address: "24 Green Park Road, Chennai",
     openingTime: "08:00",
     closingTime: "19:00",

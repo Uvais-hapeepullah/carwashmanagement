@@ -76,7 +76,7 @@ export default function Reports({ data, onView }) {
         ];
       }),
     ];
-    downloadCsv(rows, `washwise-report-${from || "all"}-to-${to || "all"}.csv`);
+    downloadCsv(rows, `ideal-car-wash-report-${from || "all"}-to-${to || "all"}.csv`);
   }
   return (
     <>

@@ -1,8 +1,8 @@
-# Washwise — Project and Reviewer Guide
+# Ideal Car Wash — Project and Reviewer Guide
 
 ## Explain the project in one minute
 
-> Washwise helps a car wash business keep its daily work in one place. A staff member can register a customer, book a vehicle for a service, move the booking through the wash queue, and record the payment. The dashboard and reports use those same records to show the business activity. I used React for the interface, Express for the API, and a JSON file for persistence so the project is easy to run and explain.
+> Ideal Car Wash helps a car wash business keep its daily work in one place. A staff member can register a customer, book a vehicle for a service, move the booking through the wash queue, and record the payment. The dashboard and reports use those same records to show the business activity. I used React for the interface, Express for the API, and a JSON file for persistence so the project is easy to run and explain.
 
 ## Why this stack is simple
 

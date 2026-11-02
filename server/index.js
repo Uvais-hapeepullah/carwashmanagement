@@ -518,6 +518,6 @@ if (
   const port = Number(process.env.PORT) || 4000;
   const host = process.env.HOST || "127.0.0.1";
   createApp().listen(port, host, () =>
-    console.log(`Washwise API is ready at http://${host}:${port}`),
+    console.log(`Ideal Car Wash API is ready at http://${host}:${port}`),
   );
 }

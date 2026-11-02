@@ -2,7 +2,7 @@
 # Free public demonstration. Local JSON data resets when the service restarts.
 services:
   - type: web
-    name: washwise-carwash
+    name: Ideal Car Wash
     runtime: node
     plan: free
     region: singapore

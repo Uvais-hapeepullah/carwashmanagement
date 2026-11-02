@@ -71,6 +71,14 @@ Sample booking dates are based on the day the data file is first created. They a
 
 To return to the sample data, stop the server, back up your data file if needed, and remove only `server/data/store.json`. Starting the server again creates fresh sample records. This removes your saved changes, so do it only when you intend to reset the demo.
 
+## Deploy a free public demo on Render
+
+The root `render.yaml` defines one free Node web service that serves both the React production build and the Express API. In Render, choose **New → Blueprint**, connect this GitHub repository, select the `main` branch, and use `render.yaml`. The Blueprint includes the build command, start command, environment settings, Singapore region, and `/api/health` health check. Render supplies `PORT` automatically.
+
+The [free service sleeps after 15 minutes without traffic](https://render.com/docs/free), and its local JSON changes are lost when it sleeps, restarts, or redeploys. Fresh demo records are created when the data file is missing. This free configuration does not attach a paid disk or database.
+
+This is a public demonstration with no login: anyone with the website address can read and change its records. Use sample customer details rather than real customer data. Payment buttons record a status; they do not charge money.
+
 ## Project explanation
 
 See [the project guide](docs/PROJECT_GUIDE.md) for the architecture, a seven-step presentation demo, and answers to common reviewer questions.

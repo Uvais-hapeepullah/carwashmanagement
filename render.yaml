@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+# Free public demonstration. Local JSON data resets when the service restarts.
+services:
+  - type: web
+    name: washwise-carwash
+    runtime: node
+    plan: free
+    region: singapore
+    repo: https://github.com/Uvais-hapeepullah/carwashmanagement
+    branch: main
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: VITE_API_URL
+        value: /api
+      - key: DATA_FILE
+        value: ./server/data/store.json
